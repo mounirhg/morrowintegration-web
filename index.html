@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morrow Integration — AI audits and systems for businesses of 3 to 20 people | Oklahoma City</title>
+<meta name="description" content="I map how your business really runs, find where automation and AI pay off, and hand you a roadmap you own. Audit at $2,499, fixed price. Oklahoma City.">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="es" href="es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<a class="salto-contenido" href="#main">Skip to content</a>
+
+<header class="cabecera">
+  <div class="env cabecera__fila">
+    <a class="marca" href="index.html">
+      <!-- La M de Morrow dibujada como un diagrama de tres nodos: lo que se vende,
+           en tinta con los nodos en azul. Propuesta de _perfil, 9-9-2026. -->
+      <svg class="marca__icono" viewBox="0 0 40 40" role="img" aria-label="Morrow Integration">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M8 33C7.6 24 9 14.5 11 7"/>
+          <path d="M11 7 20 23 29 7"/>
+          <path d="M29 7C31 14.5 32.4 24 32 33"/>
+        </g>
+        <g fill="#1A46B8">
+          <circle cx="11" cy="7" r="3"/><circle cx="20" cy="23" r="3"/><circle cx="29" cy="7" r="3"/>
+        </g>
+      </svg>
+      <span class="marca__texto">Morrow Integration<small>AI audits &amp; systems</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__enlaces">
+        <li><a href="#audit">The audit</a></li>
+        <li><a href="#areas">Four areas</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#pricing">Price</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <a class="idioma" href="es.html" hreflang="es" lang="es" title="Ver en español">ES</a>
+      <a class="btn btn--primario" href="#contact">Request the audit</a>
+      <button class="btn-menu" type="button" aria-expanded="false"
+              aria-controls="menu-movil" aria-label="Open menu">
+        <svg class="btn-menu__abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <svg class="btn-menu__cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="menu-movil" id="menu-movil">
+    <ul>
+      <li><a href="#audit">The audit</a></li>
+      <li><a href="#areas">Four areas</a></li>
+      <li><a href="#process">How it works</a></li>
+      <li><a href="#pricing">Price</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn--primario btn--ancho" href="#contact">Request the audit</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================== HERO + HOW IT WORKS, with the map fixed at the side ================== -->
+  <section class="seccion seccion--cuadricula historia">
+    <div class="env historia__grid">
+
+      <div class="portada">
+        <h1>Before you automate anything, someone has to draw how your business runs today.</h1>
+        <p class="portada__texto">
+          I walk through your operation step by step, with the people who actually do the
+          work, and hand you the map of how it really runs, where the hours go, and what is
+          worth automating first. The audit doesn't install anything, so the document says
+          what's true, not what would be convenient to sell you afterwards.
+        </p>
+        <div class="botonera">
+          <a class="btn btn--primario btn--ancho" href="#contact">Request the audit</a>
+          <a class="btn btn--fantasma btn--ancho" href="#audit">See what you get</a>
+        </div>
+        <dl class="ficha">
+          <div><dt>For</dt><dd>Businesses of 3 to 20 people</dd></div>
+          <div><dt>Delivered in</dt><dd>10 to 15 days</dd></div>
+          <div><dt>The audit</dt><dd>$2,499, fixed price</dd></div>
+          <div><dt>Languages</dt><dd>English and Spanish</dd></div>
+        </dl>
+      </div>
+
+      <!-- El mapa: cómo corre hoy el proceso, enredado. Se dibuja solo al cargar y, con
+           js/mapa.js, se va ordenando a medida que se leen los cinco pasos. Sin
+           JavaScript se queda en esta etapa. -->
+      <div class="historia__mapa">
+        <svg class="mapa" viewBox="0 0 680 520" role="img" data-mapa data-texto-auto="automated"
+             aria-label="A process map that starts tangled and gets put in order as you read the five steps">
+          <path class="mapa__trazo" d="M50 470 H200 V470 M200 470 V330 H120 M120 330 H340 V200 M340 200 V290 H260 M260 290 H440 V330 M440 330 V120 H520 M520 120 H610 V430 M520 120 V200 H340"/>
+          <g class="mapa__enlaces"></g>
+          <g class="mapa__extras"></g>
+          <g class="mapa__nodos">
+            <g class="nodo" data-id="call" transform="translate(50 470)"><circle r="7"/><text x="-6" y="26" text-anchor="start">Phone call</text></g>
+            <g class="nodo" data-id="wa" transform="translate(200 470)"><circle r="7"/><text x="10" y="18" text-anchor="start">WhatsApp</text></g>
+            <g class="nodo" data-id="note" transform="translate(120 330)"><circle r="7"/><text x="-10" y="-12" text-anchor="end">Notebook</text></g>
+            <g class="nodo" data-id="xls" transform="translate(340 200)"><circle r="7"/><text x="10" y="-10" text-anchor="start">Excel</text></g>
+            <g class="nodo" data-id="quote" transform="translate(260 290)"><circle r="7"/><text x="-10" y="22" text-anchor="end">Quote</text></g>
+            <g class="nodo" data-id="inv" transform="translate(440 330)"><circle r="7"/><text x="10" y="24" text-anchor="start">Invoice</text></g>
+            <g class="nodo" data-id="qb" transform="translate(520 120)"><circle r="7"/><text x="-10" y="-12" text-anchor="end">QuickBooks</text></g>
+            <g class="nodo" data-id="paid" transform="translate(610 430)"><circle r="7"/><text x="-10" y="26" text-anchor="end">Paid</text></g>
+          </g>
+        </svg>
+        <p class="mapa__pie" aria-live="polite">How the process runs today, as told on the first call.</p>
+      </div>
+
+      <div class="metodo" id="process">
+        <h2>Five steps. At the end, the document is yours.</h2>
+        <p class="entradilla">
+          No slide decks about the future of artificial intelligence. What comes out of this
+          can be executed by your team, by a third party, or by me. Watch the map as you read.
+        </p>
+
+        <ol class="proceso">
+          <li class="fase" data-etapa="1"
+              data-pie="What you tell me on the first call: eight steps, three of them typed twice, and nobody sure where the hours go.">
+            <h3>First call, then the questionnaire</h3>
+            <span class="fase__cuando">Free. About half an hour.</span>
+            <p>
+              You tell me what the company does and where it hurts. If I don't think the audit
+              will pay for itself, I say so on the call. Then <a href="questionnaire.html">eight questions, five minutes</a>,
+              and a written proposal with fixed scope and price. The clock starts when both are
+              done.
+            </p>
+          </li>
+          <li class="fase" data-etapa="2"
+              data-pie="The same process, drawn as it really runs: the notebook copied into Excel and back, and a queue in front of the invoice.">
+            <h3>I draw the real processes</h3>
+            <span class="fase__cuando">Week 1.</span>
+            <p>
+              The four areas, step by step, with the people who do the work. Not the version in
+              the manual and not the one told in the office. Each process comes back as a
+              diagram you review with me.
+            </p>
+          </li>
+          <li class="fase" data-etapa="3"
+              data-pie="The notebook and the second Excel are gone. The queue in front of the invoice, cleared. No software yet.">
+            <h3>I fix the process before touching technology</h3>
+            <span class="fase__cuando">Week 1 to 2.</span>
+            <p>
+              Friction, bottlenecks, steps nobody needs, and who does what. A good share of the
+              improvements need no software at all, and they come first.
+            </p>
+          </li>
+          <li class="fase" data-etapa="4"
+              data-pie="Three hand-offs automated: the quote from WhatsApp, the invoice into QuickBooks, the payment reminder. Each one checked: access, data, off switch.">
+            <h3>I find where automation and AI pay off, and check that each one is safe</h3>
+            <span class="fase__cuando">Week 2.</span>
+            <p>
+              Your current stack and what it costs you. Every candidate weighed against what it
+              saves and what it costs to build, and AI only where it makes sense. For each
+              implementation I propose: what access it needs, what data it touches, who it
+              depends on, and whether it can be switched off fast. If it isn't safe, I don't
+              propose it.
+            </p>
+          </li>
+          <li class="fase" data-etapa="5"
+              data-pie="The roadmap: three things, in this order, each with what it saves. Yours, whoever builds it.">
+            <h3>You get the roadmap and choose who builds it</h3>
+            <span class="fase__cuando">Day 10 to 15.</span>
+            <p>
+              What to do, in what order, and why that order. Your own team, a third party you
+              trust, or me. The document works the same in all three cases, and that's the
+              whole point of it.
+            </p>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================== THE QUESTION ================== -->
+  <section class="seccion pregunta" id="problem">
+    <div class="env">
+      <h2>Who does your paperwork today, and with what?</h2>
+      <p class="entradilla">
+        It's the first question I ask every business, because the answer says more than any
+        org chart. If it's one person, by hand, every day, this audit is for you. Here is
+        why most automation projects stall before they get there.
+      </p>
+      <ul class="pregunta__lista">
+        <li>
+          <strong>The tool came before the problem</strong>
+          Someone buys a platform first, then goes looking for something to use it on. The
+          pilot works, the demo looks great, and nothing in the company changes.
+        </li>
+        <li>
+          <strong>Nobody drew the process</strong>
+          You can't automate what nobody has written down. Most of the waste sits in the
+          steps between one program and the next, and that's the part no vendor looks at.
+        </li>
+        <li>
+          <strong>The advice came from whoever sells the tool</strong>
+          When the same company that audits you also resells the software, the audit
+          already knows its answer before it starts.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================== THE OFFER ================== -->
+  <section class="seccion" id="audit">
+    <div class="env">
+      <h2>One document first. Then, only if it pays off, the build.</h2>
+      <p class="entradilla">
+        Everything starts with the audit, because without it the rest is guessing. What
+        happens afterwards is your call, with the document already in your hands.
+      </p>
+
+      <div class="oferta">
+
+        <article class="pieza pieza--principal">
+          <span class="pieza__num">1. Start here</span>
+          <div class="pieza__cols">
+            <div>
+              <h3>Morrow Audit</h3>
+              <p class="pieza__precio"><b>$2,499</b> fixed scope, fixed price</p>
+              <p>
+                I go through the company end to end, across four areas, and hand you a
+                document your team can execute. Nothing gets implemented at this stage.
+                That's deliberate: it's what keeps the roadmap honest.
+              </p>
+              <p class="pieza__para">
+                <strong>For:</strong> the owner who already has customers and revenue but
+                still runs the administration by hand. Delivered 10 to 15 days after the
+                signed proposal and the answered questionnaire, whichever comes last.
+              </p>
+            </div>
+            <ul class="pieza__lista">
+              <li>A process map of the four areas, drawn as it really runs (BPMN) and reviewed with you</li>
+              <li>The fixes that need no technology at all: friction, bottlenecks, steps nobody needs</li>
+              <li>Where automation and AI actually pay off, ranked, with the discarded options named</li>
+              <li>A vulnerability study of each implementation I propose: what access it needs, what data it touches, who and what it depends on, and whether it can be switched off fast</li>
+              <li>A prioritised roadmap: what, in what order, and why that order. It's yours, whoever executes it</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="pieza">
+          <span class="pieza__num">2. Afterwards, if you choose to</span>
+          <h3>Implementation</h3>
+          <p class="pieza__precio"><b>Quoted per scope</b> after the audit</p>
+          <p>
+            If you decide to build what the roadmap put first, I quote it once we both know
+            what it is. Quoting it before that would be guessing, and you'd be the one paying
+            for the guess.
+          </p>
+          <ul class="pieza__lista">
+            <li>Custom software fitted to your process: a light CRM or ERP for customers, work orders, invoicing and payments</li>
+            <li>Automations with n8n and a WhatsApp agent, built on the tools you already use</li>
+            <li>Training for your team and accompaniment until it's in daily use</li>
+            <li>First automation in production within 2 to 4 weeks of signing</li>
+            <li>50% of what you paid for the audit is credited toward the build, up to $1,250, if you decide within 30 days of delivery</li>
+          </ul>
+          <p class="pieza__para">
+            <strong>For:</strong> businesses that want the first step built and working, not
+            just planned.
+          </p>
+        </article>
+
+        <article class="pieza">
+          <span class="pieza__num">3. If you have a technical team</span>
+          <h3>Team training</h3>
+          <p class="pieza__precio"><b>$6,500</b> complete program</p>
+          <p>
+            Your team knows <strong>what</strong> it wants to implement. It doesn't know
+            <strong>how</strong> yet. I close that gap with your people, live.
+          </p>
+          <ul class="pieza__lista">
+            <li>Live sessions with your technical team, as a group</li>
+            <li>Built around your stack and your real cases, not toy examples</li>
+            <li>Not an online course. There is no video library to hand you.</li>
+          </ul>
+          <p class="pieza__para">
+            <strong>For:</strong> companies with an in-house technical team.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== FOUR AREAS ================== -->
+  <section class="seccion seccion--cuadricula" id="areas">
+    <div class="env">
+      <h2>Four areas, and the same question in all four.</h2>
+      <p class="entradilla">
+        Which part of this is one person doing by hand, every day, because there was never
+        time to fix it? And what's already automated, and what does it cost you?
+      </p>
+
+      <div class="areas">
+        <div class="area">
+          <span class="area__letra" aria-hidden="true">M</span>
+          <h3>Marketing</h3>
+          <p>The flow, not the creative. How a lead comes in, where it comes from, what happens in the hours after, and how many are lost in that gap.</p>
+          <p><em>What usually shows up:</em> leads with no follow-up, inconsistent messages, no way to trace where a customer came from.</p>
+        </div>
+        <div class="area">
+          <span class="area__letra" aria-hidden="true">S</span>
+          <h3>Sales</h3>
+          <p>Conversion and control. What happens when a lead comes in, who contacts them, whether there's a pipeline and a follow-up.</p>
+          <p><em>What usually shows up:</em> quotes that take days to go out, deals lost in silence, everything depending on one person's memory. If sales is broken, nothing else matters yet.</p>
+        </div>
+        <div class="area">
+          <span class="area__letra" aria-hidden="true">D</span>
+          <h3>Delivery and fulfillment</h3>
+          <p>How the service gets delivered: who does what, what's manual, where the delays are, and how many times the same thing gets typed between the job closing and the job being paid.</p>
+          <p><em>What usually shows up:</em> undocumented processes, bottlenecks, the same errors repeated. This is where the big opportunities usually live.</p>
+        </div>
+        <div class="area">
+          <span class="area__letra" aria-hidden="true">A</span>
+          <h3>Administration</h3>
+          <p>Where the information lives, who has access to it, how the business is controlled and how it's reported.</p>
+          <p><em>What usually shows up:</em> scattered data, duplicated records, invoices that go out late, and nobody with a real picture of what's in and what's owed. The most forgotten area, and the critical one.</p>
+        </div>
+      </div>
+
+      <p class="nota-metodo">
+        First fix the process, then automate it. Automating a broken process only makes it
+        worse, and a good share of what I find needs no technology at all.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================== PRICE ================== -->
+  <section class="seccion precio" id="pricing">
+    <div class="env">
+      <h2>The number is here, not behind a call.</h2>
+      <p class="entradilla">
+        Of the consulting firms I reviewed in this market, most don't publish a price. They
+        make you book a call to find out whether the conversation is about three thousand or
+        eighty.
+      </p>
+
+      <dl class="precio__lista">
+        <div class="precio__fila">
+          <dt>Morrow Audit<span class="precio__cifra">$2,499</span></dt>
+          <dd>
+            Fixed scope and fixed price, agreed in writing before work starts, and it doesn't
+            move afterwards. The four areas, the roadmap, the vulnerability study of what I
+            propose. Nothing gets implemented.
+          </dd>
+        </div>
+        <div class="precio__fila">
+          <dt>Implementation<span class="precio__cifra">Quoted per scope</span></dt>
+          <dd>
+            Priced once the audit has told us what the first step is. 50% of the audit is
+            credited toward it, up to $1,250, if you decide within 30 days. Half on signing,
+            half on delivery. Subscriptions, hosting and AI usage stay in your own name.
+          </dd>
+        </div>
+        <div class="precio__fila">
+          <dt>Team training<span class="precio__cifra">$6,500</span></dt>
+          <dd>
+            The complete program for your team. Not a price per head and not a price per
+            session.
+          </dd>
+        </div>
+      </dl>
+      <p class="precio__nota">
+        Prices in US dollars. What you pay is agreed in writing before the work starts, never
+        after. Full conditions are in the <a href="terms.html">terms of service</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================== WHO ================== -->
+  <section class="seccion" id="about">
+    <div class="env">
+      <h2>What I sell, I use.</h2>
+      <p class="entradilla">
+        The method didn't come out of a slide deck. It came out of running a small operation
+        by hand, and then drawing it.
+      </p>
+
+      <div class="franqueza">
+        <h3>The first business audited with this method was mine.</h3>
+        <p>
+          ApexRoute Dispatch, a freight dispatch operation I founded and ran: five drivers and,
+          every day, the same paperwork between brokers, carriers and documents, copied from one
+          platform to the next. That's where I saw the problem this audit fixes, and where I
+          tested how to draw a process before touching it. Morrow itself is being audited with
+          the same method.
+        </p>
+        <p>
+          <strong>What you can check before hiring me:</strong> the complete method, step by
+          step, is above. The exact list of what you get, too. The price is published. And the
+          first call is free, so you can judge how I ask before paying for what I find.
+        </p>
+      </div>
+
+      <div class="caso">
+        <h3>An air-conditioning contractor</h3>
+        <p class="caso__estado">Founding case. In progress.</p>
+        <p>
+          The first complete walk-through of another company: a field-service contractor with
+          one person carrying the administration, from quote to payment. Done in exchange for
+          documenting the method end to end.
+        </p>
+        <div class="hueco">
+          <p>
+            <strong>Measured results:</strong> this space is empty on purpose. The hours and
+            days recovered go here once they're measured against the starting point, not
+            before. If you ever see a figure on this page, it's because it was delivered.
+          </p>
+        </div>
+      </div>
+
+      <div class="perfil">
+        <img class="perfil__foto" src="imagenes/perfil.jpg" width="168" height="168"
+             alt="Mounir Hadi Guerra, founder of Morrow Integration">
+        <div class="perfil__texto">
+          <h3 class="perfil__nombre">Mounir Hadi Guerra</h3>
+          <p class="perfil__cargo">Founder, Morrow Integration LLC</p>
+          <p>
+            The call, the walk-through, the interviews with your people and the final document
+            are all done by the same person. There's no account manager in between and nobody
+            junior signing under someone else's name.
+          </p>
+          <p>
+            That's exactly why the work fits businesses of 3 to 20 people: at that size, the
+            operation can be understood by talking to six people and watching what they do.
+            You don't need a team of consultants. You need someone who sits down and looks.
+          </p>
+          <p>I work in English and Spanish, both fully: the calls, the interviews and the document.</p>
+          <p class="perfil__enlace"><a href="https://www.linkedin.com/in/mounir-hadi" rel="noopener">My profile on LinkedIn</a></p>
+        </div>
+      </div>
+
+      <ul class="pilares">
+        <li class="pilar">
+          <h3>Specific, not generic</h3>
+          <p>
+            What I bring is specific to your information and your implementations. Generic
+            AI advice is free and everywhere, and it's the reason most pilots die at the demo.
+          </p>
+        </li>
+        <li class="pilar">
+          <h3>I don't resell what I recommend</h3>
+          <p>
+            The audit doesn't implement, and I don't resell tools. So the roadmap has no
+            reason to recommend something because it's convenient for me. And I never propose
+            replacing the software you already use: I integrate with it.
+          </p>
+        </li>
+        <li class="pilar">
+          <h3>Training, not courses</h3>
+          <p>
+            I don't sell online courses. I train your team live, as a group, on your systems
+            and your real cases. There's no video library, because a video library has never
+            shipped anything.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================== FAQ ================== -->
+  <section class="seccion" id="faq">
+    <div class="env">
+      <h2>The questions people actually ask.</h2>
+
+      <div class="faq">
+        <details>
+          <summary>Do you implement what you recommend?</summary>
+          <p>
+            Not inside the audit, and that's the point. If afterwards you want me to build
+            the first step, that's the implementation, quoted separately, and you decide
+            with the document already in hand. You're equally free to take it to your own
+            team or to another firm: it's written to work in all three cases.
+          </p>
+        </details>
+        <details>
+          <summary>Are you going to tell me to replace the software I already use?</summary>
+          <p>
+            No. The plan is built on top of what you have. If a tool genuinely can't do what
+            you need, I say so with the reason in writing, but the default is always to
+            integrate, never to replace.
+          </p>
+        </details>
+        <details>
+          <summary>When am I too small for this?</summary>
+          <p>
+            The work is built for businesses of 3 to 20 people. Below that, there's usually
+            no hand-off between areas to map, and the audit would cost more than the problem
+            it finds. I tell you on the first call, not after the invoice.
+          </p>
+        </details>
+        <details>
+          <summary>Do we have to be in Oklahoma?</summary>
+          <p>
+            Oklahoma City is where I'm based, and the walk-through works best when I can come
+            in person. But the work is done remotely just as well, in the United States,
+            Latin America and Spain.
+          </p>
+        </details>
+        <details>
+          <summary>How long does it take?</summary>
+          <p>
+            Ten to fifteen days from the moment the proposal is signed and the questionnaire
+            is answered. If for any reason it's going to take longer, you know before we
+            start, not halfway through.
+          </p>
+        </details>
+        <details>
+          <summary>How do we start?</summary>
+          <p>
+            Write to me or call, and tell me what the company does and who does the paperwork
+            today. The first call is free and nothing needs preparing. If you would rather write first, the <a href="questionnaire.html">questionnaire</a> is eight questions and five minutes.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== CONTACT ================== -->
+  <section class="seccion contacto" id="contact">
+    <div class="env">
+      <h2>Request the audit</h2>
+      <p class="entradilla">
+        Tell me what the company does and who does the paperwork today. The first call is
+        free, it takes about half an hour, and you don't need to prepare a single document.
+      </p>
+
+      <div class="contacto__grid">
+        <!-- Formulario sin servidor: al enviar se abre el correo del visitante con el
+             texto escrito (js/formulario.js). Sin JavaScript manda igual por mailto:. -->
+        <form class="formulario" action="mailto:mounir@morrowintegration.com" method="post" enctype="text/plain"
+              data-mailto="mounir@morrowintegration.com" data-asunto="Audit request" data-asunto-campo="empresa"
+              data-titulo="AUDIT REQUEST — MORROW INTEGRATION">
+          <h3>Write to me here</h3>
+          <p class="formulario__intro">
+            Four fields. Sending opens your own email program with the text already written,
+            so you see exactly what goes out.
+          </p>
+          <label class="campo">
+            <span class="campo__etiqueta">Your company, and what it does</span>
+            <input type="text" name="empresa" required autocomplete="organization">
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Who does the paperwork today, and with what?</span>
+            <textarea name="papeleo" rows="3" placeholder="E.g.: one person, in Excel and WhatsApp, every evening."></textarea>
+          </label>
+          <div class="campos-dos">
+            <label class="campo">
+              <span class="campo__etiqueta">Your name</span>
+              <input type="text" name="nombre" required autocomplete="name">
+            </label>
+            <label class="campo">
+              <span class="campo__etiqueta">Email or phone</span>
+              <input type="text" name="contacto" required>
+            </label>
+          </div>
+          <div class="formulario__acciones">
+            <button class="btn btn--primario" type="submit">Send the request</button>
+            <a href="questionnaire.html">Or answer the eight questions, five minutes</a>
+          </div>
+          <p class="formulario__nota">Nothing is stored on this page. I reply within 24 business hours.</p>
+        </form>
+
+        <div>
+          <h3>Or reach me directly</h3>
+      <div class="canales">
+        <a class="canal" href="mailto:mounir@morrowintegration.com">
+          <span class="canal__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+              <path d="M3 6.5l8.1 5.9a1.6 1.6 0 0 0 1.8 0L21 6.5"/>
+            </svg>
+          </span>
+          <span class="canal__texto">
+            <small>Write to me</small>
+            <span>mounir@morrowintegration.com</span>
+          </span>
+        </a>
+
+        <a class="canal" href="tel:+17867420580">
+          <span class="canal__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+            </svg>
+          </span>
+          <span class="canal__texto">
+            <small>Call me</small>
+            <span>+1 786 742 0580</span>
+          </span>
+        </a>
+
+        <a class="canal" href="sms:+17867420580">
+          <span class="canal__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.8 9.8 0 0 1-3.9-.8L3 21l1.9-4.6A8.3 8.3 0 0 1 4 11.5 8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/>
+            </svg>
+          </span>
+          <span class="canal__texto">
+            <small>Prefer to write? Text me</small>
+            <span>+1 786 742 0580</span>
+          </span>
+        </a>
+
+        <a class="canal" href="https://wa.me/17867420580" rel="noopener">
+          <span class="canal__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/>
+              <path d="M8.5 8.2c.3-.7.6-.7.9-.7h.7c.2 0 .5 0 .8.6l1 2.3c.1.3.1.5 0 .7l-.5.7c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.4.2.6.1.8-.1l.7-.8c.2-.3.4-.3.7-.2l2.2 1c.3.2.4.4.4.6a2.4 2.4 0 0 1-1.7 2.2 4.6 4.6 0 0 1-3-.5 12.6 12.6 0 0 1-6.3-6.6 4.4 4.4 0 0 1 .2-3.6z"/>
+            </svg>
+          </span>
+          <span class="canal__texto">
+            <small>WhatsApp</small>
+            <span>Message me on WhatsApp</span>
+          </span>
+        </a>
+      </div>
+        </div>
+      </div>
+
+      <p class="contacto__nota">
+        Based in Oklahoma City, Oklahoma. Remote work in the United States, Latin America and
+        Spain. The WhatsApp button opens WhatsApp, a third-party service with its own privacy
+        policy. Calls and texts go to the number above; standard message and data rates from your phone company may
+        apply, and I never send promotional messages to anyone who contacts me. What I do
+        with whatever you send me is set out in the <a href="privacy.html">privacy policy</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="env">
+    <div class="pie__grid">
+      <div>
+        <h3>Morrow Integration LLC</h3>
+        <p>
+          AI audits and systems for businesses of 3 to 20 people: field services, transport
+          and local commerce. Registered in Oklahoma on 28 August 2026, file number 3513982298.
+        </p>
+        <p>Oklahoma City, Oklahoma. Remote work in the United States, Latin America and Spain.</p>
+      </div>
+      <div>
+        <h3>Sections</h3>
+        <ul>
+          <li><a href="#audit">The audit</a></li>
+          <li><a href="#areas">Four areas</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#pricing">Price</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Request the audit</a></li>
+          <li><a href="questionnaire.html">Questionnaire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="mailto:mounir@morrowintegration.com">mounir@morrowintegration.com</a></li>
+          <li><a href="tel:+17867420580">+1 786 742 0580</a></li>
+          <li><a href="https://www.linkedin.com/in/mounir-hadi" rel="noopener">LinkedIn</a></li>
+          <li><a href="es.html" hreflang="es" lang="es">Ver en español</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+          <li><a href="legal.html">Legal notice</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p>&copy; 2026 Morrow Integration LLC. All rights reserved.</p>
+      <p>The legal texts on this site are templates and must be reviewed by a qualified professional before publication.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/formulario.js"></script>
+</body>
+</html>

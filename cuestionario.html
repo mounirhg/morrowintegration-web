@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuestionario previo — Morrow Integration | Oklahoma City</title>
+<meta name="description" content="Ocho preguntas, cinco minutos. Con esto llego a la primera llamada sabiendo de qué hablamos. Las respuestas se envían desde su propio correo; nada se guarda en la página.">
+<link rel="alternate" hreflang="es" href="cuestionario.html">
+<link rel="alternate" hreflang="en" href="questionnaire.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<a class="salto-contenido" href="#main">Saltar al contenido</a>
+<div class="progreso" aria-hidden="true"></div>
+
+<header class="cabecera">
+  <div class="env cabecera__fila">
+    <a class="marca" href="es.html">
+      <svg class="marca__icono" viewBox="0 0 40 40" role="img" aria-label="Morrow Integration">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M8 33C7.6 24 9 14.5 11 7"/>
+          <path d="M11 7 20 23 29 7"/>
+          <path d="M29 7C31 14.5 32.4 24 32 33"/>
+        </g>
+        <g fill="#1A46B8">
+          <circle cx="11" cy="7" r="3"/><circle cx="20" cy="23" r="3"/><circle cx="29" cy="7" r="3"/>
+        </g>
+      </svg>
+      <span class="marca__texto">Morrow Integration<small>Auditoría y sistemas de IA</small></span>
+    </a>
+    <div class="cabecera__acciones">
+      <a class="idioma" href="questionnaire.html" hreflang="en" lang="en" title="Read in English">EN</a>
+      <a class="btn btn--fantasma" href="es.html">Volver a la web</a>
+    </div>
+  </div>
+</header>
+
+<main class="cuestionario" id="main">
+  <div class="env">
+
+    <div class="cuestionario__cabeza">
+      <h1>Cuénteme cómo trabajan hoy, y llego a la llamada sabiendo de qué hablamos.</h1>
+      <p class="entradilla">
+        Ocho preguntas, unos cinco minutos. La media hora de la llamada vale mucho más si
+        no se gasta en enterarme de lo básico. Ninguna pregunta es obligatoria: lo que no
+        quiera escribir, lo hablamos.
+      </p>
+    </div>
+
+    <div class="cuestionario__grid">
+
+      <aside class="indice" aria-label="Avance del cuestionario">
+        <ol>
+          <li data-q="q1"><b>1</b> La empresa</li>
+          <li data-q="q2"><b>2</b> Tamaño</li>
+          <li data-q="q3"><b>3</b> Facturación</li>
+          <li data-q="q4"><b>4</b> El papeleo</li>
+          <li data-q="q5"><b>5</b> Programas</li>
+          <li data-q="q6"><b>6</b> La tarea que quitaría</li>
+          <li data-q="q7"><b>7</b> Dónde duele</li>
+          <li data-q="q8"><b>8</b> Cómo lo contacto</li>
+        </ol>
+        <p class="indice__nota">
+          <strong>Qué pasa después</strong>
+          Leo las respuestas y le contesto en 24 horas hábiles. Si veo que la auditoría no le
+          va a devolver lo que cuesta, se lo digo ahí mismo y no hay llamada. No cuesta nada
+          averiguarlo.
+        </p>
+      </aside>
+
+      <form id="cuestionario" action="mailto:mounir@morrowintegration.com" method="post" enctype="text/plain"
+            data-mailto="mounir@morrowintegration.com"
+            data-asunto="Cuestionario previo" data-asunto-campo="empresa"
+            data-titulo="CUESTIONARIO PREVIO — MORROW INTEGRATION">
+
+        <fieldset class="pregunta" id="q1">
+          <legend><span class="pregunta__num">1</span>¿Cómo se llama la empresa y a qué se dedica?</legend>
+          <p class="pregunta__ayuda">Con una línea basta. Si tienen sitio web, péguelo también.</p>
+          <label class="campo">
+            <span class="campo__etiqueta">Empresa y actividad</span>
+            <textarea name="empresa" rows="3" placeholder="Ej.: Eagle Cars OKC, taller y venta de autos usados. eaglecarsokc.com"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q2">
+          <legend><span class="pregunta__num">2</span>¿Cuántas personas trabajan ahí?</legend>
+          <p class="pregunta__ayuda">Contando a los del campo y a los de la oficina.</p>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="tamano" value="1 a 2" data-etiqueta="Personas"><span>1 a 2</span></label>
+            <label class="opcion"><input type="radio" name="tamano" value="3 a 9" data-etiqueta="Personas"><span>3 a 9</span></label>
+            <label class="opcion"><input type="radio" name="tamano" value="10 a 20" data-etiqueta="Personas"><span>10 a 20</span></label>
+            <label class="opcion"><input type="radio" name="tamano" value="21 a 50" data-etiqueta="Personas"><span>21 a 50</span></label>
+            <label class="opcion"><input type="radio" name="tamano" value="Más de 50" data-etiqueta="Personas"><span>Más de 50</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q3">
+          <legend><span class="pregunta__num">3</span>¿Por dónde anda la facturación al año?</legend>
+          <p class="pregunta__ayuda">Una horquilla vale. Sirve para saber si el precio de la auditoría tiene sentido para ustedes.</p>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="facturacion" value="Menos de $250K" data-etiqueta="Facturación anual"><span>Menos de $250K</span></label>
+            <label class="opcion"><input type="radio" name="facturacion" value="$250K a $1M" data-etiqueta="Facturación anual"><span>$250K a $1M</span></label>
+            <label class="opcion"><input type="radio" name="facturacion" value="$1M a $3M" data-etiqueta="Facturación anual"><span>$1M a $3M</span></label>
+            <label class="opcion"><input type="radio" name="facturacion" value="Más de $3M" data-etiqueta="Facturación anual"><span>Más de $3M</span></label>
+            <label class="opcion"><input type="radio" name="facturacion" value="Prefiero decirlo en la llamada" data-etiqueta="Facturación anual"><span>Prefiero decirlo en la llamada</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q4">
+          <legend><span class="pregunta__num">4</span>¿Quién hace hoy el papeleo, y en qué lo hace?</legend>
+          <p class="pregunta__ayuda">
+            La pregunta importante. Cotizaciones, facturas, partes de trabajo, permisos: quién
+            los escribe, dónde los escribe y qué pasa con ellos después. Es la que más dice de
+            una operación.
+          </p>
+          <label class="campo">
+            <span class="campo__etiqueta">Quién, y con qué</span>
+            <textarea name="papeleo" rows="4" placeholder="Ej.: mi esposa hace las facturas en QuickBooks copiando de los partes que los técnicos mandan por WhatsApp. Las cotizaciones las hago yo en Word."></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q5">
+          <legend><span class="pregunta__num">5</span>¿Qué programas usan hoy?</legend>
+          <p class="pregunta__ayuda">Marque los que apliquen. No pasa nada si la respuesta es "papel y Excel": es la más común.</p>
+          <div class="opciones">
+            <label class="opcion"><input type="checkbox" name="programas" value="QuickBooks" data-etiqueta="Programas"><span>QuickBooks</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="ServiceTitan" data-etiqueta="Programas"><span>ServiceTitan</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="Jobber" data-etiqueta="Programas"><span>Jobber</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="Housecall Pro" data-etiqueta="Programas"><span>Housecall Pro</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="Excel o Google Sheets" data-etiqueta="Programas"><span>Excel o Google Sheets</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="WhatsApp para el campo" data-etiqueta="Programas"><span>WhatsApp para el campo</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="Papel" data-etiqueta="Programas"><span>Papel</span></label>
+            <label class="opcion"><input type="checkbox" name="programas" value="Otro" data-etiqueta="Programas"><span>Otro</span></label>
+          </div>
+          <label class="campo campo--extra">
+            <span class="campo__etiqueta">¿Alguno más?</span>
+            <input type="text" name="otros_programas" data-etiqueta="Otros programas">
+          </label>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q6">
+          <legend><span class="pregunta__num">6</span>Si mañana pudiera quitarle una tarea repetitiva a alguien de su equipo, ¿cuál sería?</legend>
+          <p class="pregunta__ayuda">La primera que se le venga a la cabeza suele ser la correcta.</p>
+          <label class="campo">
+            <span class="campo__etiqueta">La tarea que quitaría</span>
+            <textarea name="tarea" rows="3" placeholder="Ej.: que nadie tenga que volver a teclear el mismo trabajo tres veces."></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q7">
+          <legend><span class="pregunta__num">7</span>¿En qué área duele más ahora mismo?</legend>
+          <p class="pregunta__ayuda">Puede marcar varias. La auditoría recorre las cuatro igual; esto solo me dice por dónde empezar a preguntar.</p>
+          <div class="opciones">
+            <label class="opcion"><input type="checkbox" name="area" value="Marketing (que entren clientes)" data-etiqueta="Dónde duele"><span>Marketing: que entren clientes</span></label>
+            <label class="opcion"><input type="checkbox" name="area" value="Ventas (cotizar y cerrar)" data-etiqueta="Dónde duele"><span>Ventas: cotizar y cerrar</span></label>
+            <label class="opcion"><input type="checkbox" name="area" value="Entrega del servicio (hacer el trabajo)" data-etiqueta="Dónde duele"><span>Entrega del servicio: hacer el trabajo</span></label>
+            <label class="opcion"><input type="checkbox" name="area" value="Administración (facturar y papeles)" data-etiqueta="Dónde duele"><span>Administración: facturar y papeles</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="pregunta" id="q8">
+          <legend><span class="pregunta__num">8</span>¿Cómo lo contacto?</legend>
+          <p class="pregunta__ayuda">Con el correo basta. El teléfono solo si prefiere que lo llame o le escriba por mensaje.</p>
+          <div class="campos-dos">
+            <label class="campo"><span class="campo__etiqueta">Su nombre</span><input type="text" name="nombre" autocomplete="name"></label>
+            <label class="campo"><span class="campo__etiqueta">Su correo</span><input type="email" name="correo" autocomplete="email"></label>
+            <label class="campo"><span class="campo__etiqueta">Teléfono (opcional)</span><input type="tel" name="telefono" autocomplete="tel"></label>
+            <label class="campo"><span class="campo__etiqueta">Mejor hora para llamarlo</span><input type="text" name="hora"></label>
+          </div>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="prefiere" value="Correo" data-etiqueta="Prefiere"><span>Prefiero correo</span></label>
+            <label class="opcion"><input type="radio" name="prefiere" value="Llamada" data-etiqueta="Prefiere"><span>Prefiero llamada</span></label>
+            <label class="opcion"><input type="radio" name="prefiere" value="Mensaje de texto" data-etiqueta="Prefiere"><span>Prefiero mensaje de texto</span></label>
+            <label class="opcion"><input type="radio" name="prefiere" value="WhatsApp" data-etiqueta="Prefiere"><span>WhatsApp</span></label>
+          </div>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="idioma" value="Español" data-etiqueta="Idioma"><span>En español</span></label>
+            <label class="opcion"><input type="radio" name="idioma" value="English" data-etiqueta="Idioma"><span>In English</span></label>
+          </div>
+        </fieldset>
+
+        <div class="cierre-form">
+          <h2>Y ya está.</h2>
+          <p>
+            Al enviar se abre su correo con las respuestas ya escritas, para que vea exactamente
+            qué se manda antes de mandarlo. Si prefiere, cópielas y péguelas donde quiera.
+          </p>
+          <div class="formulario__acciones">
+            <button class="btn btn--primario" type="submit">Enviar por correo</button>
+            <button class="btn btn--fantasma" type="button" data-copiar="Copie sus respuestas:">Copiar respuestas</button>
+            <span class="formulario__ok" aria-live="polite">Copiado</span>
+          </div>
+          <p class="formulario__nota">
+            No se guarda nada en esta página ni se manda a ningún servicio de terceros. Lo que
+            escriba viaja en su propio correo, desde su propia cuenta.
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="env">
+    <div class="pie__legal">
+      <p>&copy; 2026 Morrow Integration LLC — Oklahoma City, Oklahoma.</p>
+      <ul class="pie__enlaces"><li><a href="mailto:mounir@morrowintegration.com">mounir@morrowintegration.com</a></li><li><a href="tel:+17867420580">+1 786 742 0580</a></li><li><a href="privacidad.html">Privacidad</a></li><li><a href="es.html">Volver a la web</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/formulario.js"></script>
+</body>
+</html>

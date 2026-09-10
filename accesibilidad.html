@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Declaración de accesibilidad — Morrow Integration | Oklahoma City</title>
+<meta name="description" content="Declaración de accesibilidad de la web de Morrow Integration: qué estándar se sigue, qué se ha comprobado, qué se corrigió y cómo avisar de una barrera.">
+<link rel="alternate" hreflang="en" href="accessibility.html">
+<link rel="alternate" hreflang="es" href="accesibilidad.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<a class="salto-contenido" href="#main">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="env cabecera__fila">
+    <a class="marca" href="es.html">
+      <svg class="marca__icono" viewBox="0 0 40 40" role="img" aria-label="Morrow Integration">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M8 33C7.6 24 9 14.5 11 7"/>
+          <path d="M11 7 20 23 29 7"/>
+          <path d="M29 7C31 14.5 32.4 24 32 33"/>
+        </g>
+        <g fill="#1A46B8">
+          <circle cx="11" cy="7" r="3"/><circle cx="20" cy="23" r="3"/><circle cx="29" cy="7" r="3"/>
+        </g>
+      </svg>      <span class="marca__texto">Morrow Integration<small>Auditoría y sistemas de IA</small></span>
+    </a>
+    <div class="cabecera__acciones">
+      <a class="idioma" href="accessibility.html" hreflang="en" lang="en" title="Read in English">EN</a>
+      <a class="btn btn--fantasma" href="es.html">Inicio</a>
+    </div>
+  </div>
+</header>
+
+<main class="doc" id="main">
+  <div class="env">
+
+    <h1>Declaración de accesibilidad</h1>
+
+    <p>
+      Morrow Integration quiere que esta web la pueda usar cualquiera, incluidas las
+      personas que navegan con lector de pantalla, solo con teclado, con la letra ampliada
+      o con necesidades de contraste.
+    </p>
+
+    <h2>Qué estándar seguimos</h2>
+    <p>
+      Tomamos como referencia las <strong>Pautas de Accesibilidad para el Contenido Web
+      (WCAG) 2.2, nivel AA</strong>. Es el estándar que el Departamento de Justicia de
+      Estados Unidos señala como orientación útil para cumplir con la Ley de
+      Estadounidenses con Discapacidades (ADA), aunque no exista un reglamento con
+      estándares detallados para webs de empresa privada.
+    </p>
+
+    <h2>Qué hemos hecho para conseguirlo</h2>
+    <ul>
+      <li>Cada página declara su idioma, y los enlaces que cambian de idioma llevan el suyo
+          propio.</li>
+      <li>Toda la web funciona <strong>solo con teclado</strong>: no hay elementos pulsables
+          que no sean botones o enlaces reales, no hay orden de tabulación forzado y la
+          tecla Escape cierra el menú devolviendo el foco al botón que lo abrió.</li>
+      <li>El indicador de foco es visible en todos los elementos interactivos, con contorno
+          propio y separación respecto al elemento.</li>
+      <li>Hay un <strong>enlace para saltar al contenido</strong> al principio de cada
+          página, que aparece al recibir el foco.</li>
+      <li>Ninguna imagen carece de alternativa textual: los gráficos decorativos están
+          ocultos a los lectores de pantalla y los informativos tienen nombre accesible.</li>
+      <li>Las animaciones se desactivan por completo si el sistema del visitante pide
+          <strong>movimiento reducido</strong>. El contenido nunca depende de que funcione
+          el JavaScript.</li>
+      <li>Las áreas pulsables cumplen el tamaño mínimo recomendado.</li>
+      <li>La web no carga tipografías, scripts ni recursos de servidores de terceros, lo que
+          evita bloqueos de renderizado que afectan a la lectura asistida.</li>
+      <li>Hay dos formularios: uno corto en la sección de contacto y el cuestionario previo, los
+          dos en español y en inglés. Todos los campos tienen etiqueta visible, nada es
+          obligatorio salvo los campos que dicen quién escribe, y nunca bloquean: las respuestas
+          se envían con su propio programa de correo, que las muestra antes de enviarlas.</li>
+    </ul>
+
+    <h2>Qué se revisó, qué falló y qué se corrigió</h2>
+    <p>
+      Preferimos decirlo a que lo descubra usted. En la revisión del
+      <strong>11 de agosto de 2026</strong> se detectaron cuatro puntos, con sus valores
+      medidos. <strong>Los cuatro se corrigieron ese mismo día.</strong>
+    </p>
+    <div class="tabla-doc">
+      <table>
+        <thead>
+          <tr>
+            <th>Qué falló</th>
+            <th>Medida entonces</th>
+            <th>Medida ahora</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Contraste del texto secundario (etiquetas de servicio, notas de precio,
+                rótulos de los canales de contacto) sobre el fondo de las tarjetas</td>
+            <td>4,49:1</td>
+            <td>5,78:1</td>
+            <td>Corregido el 11-08-2026</td>
+          </tr>
+          <tr>
+            <td>El mismo texto sobre la tarjeta destacada de servicios</td>
+            <td>3,71:1</td>
+            <td>4,77:1</td>
+            <td>Corregido el 11-08-2026</td>
+          </tr>
+          <tr>
+            <td>La nota al pie de la portada, sobre el fondo con degradado</td>
+            <td>entre 3,64:1 y 3,65:1</td>
+            <td>4,69:1</td>
+            <td>Corregido el 11-08-2026</td>
+          </tr>
+          <tr>
+            <td>Salto en la jerarquía de encabezados en el pie de página (de nivel 2 a
+                nivel 4 sin pasar por el 3)</td>
+            <td>—</td>
+            <td>Jerarquía continua</td>
+            <td>Corregido el 11-08-2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      El mínimo exigido para el texto normal es <strong>4,5:1</strong> (WCAG 2.2, criterio
+      1.4.3, nivel AA). El salto de encabezados corresponde al criterio 1.3.1, nivel A. Las
+      relaciones de contraste se calcularon con la fórmula de luminancia relativa de las
+      WCAG, validada antes de usarla contra dos valores conocidos.
+    </p>
+    <p>
+      El <strong>9 de septiembre de 2026</strong> se rehízo el diseño visual de la web, con
+      paleta y tipografías nuevas. Se volvió a medir cada color de texto sobre los fondos
+      nuevos: texto principal 17,96:1; texto secundario
+      6,07:1 sobre el fondo de la página y 6,34:1 sobre los
+      bloques blancos; enlaces 7,69:1; texto de los botones 8,04:1; y
+      texto secundario dentro del bloque azul del precio 6,35:1. Todos por encima
+      del mínimo de 4,5:1. Las tipografías se sirven desde la propia carpeta de la web, no
+      desde terceros, y el mapa de la portada (que se dibuja al cargar y se ordena a medida que se leen los cinco pasos) solo se mueve si el sistema lo permite: con movimiento reducido, cada estado aparece sin animación.
+    </p>
+
+    <h2>Qué no hemos podido comprobar</h2>
+    <p>
+      Esta declaración se apoya en una revisión hecha sobre los archivos de la web. Quedan
+      fuera, y por tanto no se afirma nada sobre ellos: el recorrido real con un lector de
+      pantalla concreto, si el indicador de foco se distingue bien sobre cada fondo una vez
+      dibujada la página, y las medidas reales de los elementos tras renderizarse en cada
+      dispositivo.
+    </p>
+
+    <h2>Cómo avisarnos de una barrera</h2>
+    <p>
+      Si no puede usar alguna parte de esta web, díganoslo y lo arreglamos. Cuéntenos qué
+      página era, qué intentaba hacer y qué ocurrió.
+    </p>
+    <ul>
+      <li>Correo:
+          <a href="mailto:mounir@morrowintegration.com">mounir@morrowintegration.com</a></li>
+      <li>Teléfono y SMS: <a href="tel:+17867420580">+1 786 742 0580</a></li>
+    </ul>
+    <p>
+      <strong>Respondemos en un plazo de 5 días laborables</strong> desde que recibimos el
+      aviso. Si arreglarlo lleva más tiempo, en esa respuesta le decimos cuánto.
+    </p>
+
+    <h2>Datos del responsable</h2>
+    <p>
+      Morrow Integration — Oklahoma City, Estados Unidos.
+    </p>
+    <p>
+      Razón social: <strong>Morrow Integration LLC</strong>. Estado de constitución:
+      Oklahoma, Estados Unidos. Registrada el 28 de agosto de 2026 ante el Secretario de
+      Estado de Oklahoma, expediente 3513982298. Agente registrado y domicilio registrado:
+      Northwest Registered Agent, LLC, 9905 S Pennsylvania Ave, Ste A, Oklahoma City, OK 73159.
+    </p>
+
+    <p class="fecha-version">
+      <strong>Última revisión de accesibilidad:</strong>
+      <time datetime="2026-09-09">9 de septiembre de 2026</time>.<br>
+      <strong>Método:</strong> revisión sobre el código de la web (HTML, CSS y JavaScript),
+      con cálculo de las relaciones de contraste mediante la fórmula de luminancia relativa
+      de las WCAG.<br>
+      <strong>Próxima revisión prevista:</strong> con cada cambio de contenido de la web.
+    </p>
+
+    <p><a class="volver" href="es.html">&larr; Volver a la web</a></p>
+
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="env">
+    <div class="pie__legal">
+      <p>&copy; 2026 Morrow Integration LLC — Oklahoma City, Estados Unidos.</p>
+      <ul class="pie__enlaces"><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="privacidad.html">Privacidad</a></li><li><a href="terminos.html">Términos</a></li><li><a href="es.html">Inicio</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
